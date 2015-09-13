@@ -37,7 +37,7 @@ module.exports=function(app,mongod,passport){// ================================
                     }); 
                 }
             });
-            res.redirect('http://localhost:3000/');
+            res.redirect('http://localhost:3000/goals');
         }
     );
     app.get('/loggedin', function (req, res){

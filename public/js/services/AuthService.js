@@ -19,8 +19,8 @@ AuthService.factory('Auth', ['$location','$http', function($location,$http) {
 		logout: function(){
 			$http.get('http://localhost:3000/logout')
 	    		.success(function(data) {
-	            	$location.url('/login');
-	            	$location.path('/login');
+	            	$location.url('/');
+	            	$location.path('/');
 	            	$location.replace();
 	        	});
 		}

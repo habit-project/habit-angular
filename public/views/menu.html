@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-inverse" id="home-navbar">
+    <div class="container-fluid col-md-10 col-md-offset-1">
+        <div class="navbar-header">
+          <a class="navbar-brand" ui-sref="home">Habit Project</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li class="navbar-link ui-sref-active"><a ui-sref="home">Home</a></li>
+                <li><a class="navbar-link" ui-sref="goals" ng-show="loggedIn">Goals</a></li>
+                <li><a class="navbar-link" ui-sref="habits" ng-show="loggedIn">Habits</a></li>
+                <li><a class="navbar-link" ui-sref="actions" ng-show="loggedIn">Actions</a></li>
+                <li><a class="navbar-link" ui-sref="schedule" ng-show="loggedIn">Schedule</a></li>
+                <li><a class="navbar-link" ui-sref="profile" ng-show="loggedIn">Profile</a></li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+                <a id="login-button" target="_self" ng-hide="loggedIn" href="/auth/google" class="btn btn-danger navbar-btn"><span class="fa fa-google-plus"></span>Login</a>
+                <p id="user-info" style="max-height:50px; margin-top:5px; margin-bottom:5px;" class="navbar-text" ng-show="loggedIn">
+                    {{user.name}}<br/>
+                    {{user.email}}
+                </p>
+                <a id="logout-button" ng-show="loggedIn" target="_self" ng-click="logout()" class="btn btn-default navbar-btn">Logout</a>
+            </div>
+    </div><!--/.nav-collapse -->
+</div>

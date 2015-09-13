@@ -1,8 +1,8 @@
-var UserData = angular.module('UserData', []);
-UserData.directive('ngUser', function() {
+var UserMenu = angular.module('UserMenu', []);
+UserMenu.directive('ngMenu', function() {
     return{
     	restrict: 'E',
-    	templateUrl: 'views/user.html',
+    	templateUrl: 'views/menu.html',
 		controller: ['$scope', 'Auth', function($scope, Auth) {
 			$scope.loggedIn = false;
 			$scope.user={};

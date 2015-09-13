@@ -23,36 +23,20 @@
 
     <!-- ANGULAR CUSTOM -->
     <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/ProfileCtrl.js"></script>
+    <script src="js/controllers/GoalCtrl.js"></script>
+    <script src="js/controllers/HabitCtrl.js"></script>
+    <script src="js/controllers/ActionCtrl.js"></script>
+    <script src="js/controllers/ScheduleCtrl.js"></script>
     <script src="js/services/AuthService.js"></script>
-    <script src="js/directives/UserData.js"></script>
+    <script src="js/directives/UserMenu.js"></script>
     <script src="js/app.js"></script>
     
     <script src="js/uiAppRoutes.js"></script> 
     <!-- Comment Out Sources <script src="js/appRoutes.js"><script src="libs/angular-route/angular-route.min.js"></script></script>-->
 </head>
 <body ng-app="habitApp">
-    <div class="navbar navbar-default" id="home-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" ui-sref="home">Habit Project</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="navbar-link ui-sref-active"><a ui-sref="home">Home</a></li>
-                <li><a class="navbar-link" ui-sref="about">Another Page</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <ng-user></ng-user>
-            </ul>
-        </div>
-    </div><!--/.nav-collapse -->
-      </div>
-    </div>
+    <ng-menu></ng-menu>
     <div>
         <!-- ANGULAR DYNAMIC CONTENT -->
         <div ui-view></div>

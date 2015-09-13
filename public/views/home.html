@@ -1,12 +1,33 @@
 <!-- public/views/home.html -->
-
-<div class="col-md-10 col-md-offset-1" ng-controller="MainController">
+<div ng-controller="MainController">
     <div class="row">
     	<div class="container flex-container">
-		    <div class="jumbotron main-content">
+		    <div class="jumbotron main-content col-md-5">
 				<div class="caption">
 					<h2>Welcome to Habit Project</h2>
-					<p><a class="btn btn-default" role="button">Habits</a></p>
+					<p><a class="btn btn-default" ui-sref="profile" role="button"> Go to Profile</a></p>
+				</div>
+			</div>
+			<div class="jumbotron main-content col-md-5 col-md-offset-1">
+				<div class="caption">
+					<h2>Your upcoming Actions</h2>
+					<p><a class="btn btn-default" ui-sref="schedule" role="button">Go to Schedule</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+    	<div class="container flex-container">
+		    <div class="jumbotron main-content col-md-5">
+				<div class="caption">
+					<h2>Your set Goals</h2>
+					<p><a class="btn btn-default" ui-sref="goals" role="button"> Go to Goals</a></p>
+				</div>
+			</div>
+			<div class="jumbotron main-content col-md-5 col-md-offset-1">
+				<div class="caption">
+					<h2>Your active Habits</h2>
+					<p><a class="btn btn-default" ui-sref="goals" role="button">Go to Habits</a></p>
 				</div>
 			</div>
 		</div>

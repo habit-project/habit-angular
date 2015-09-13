@@ -1,0 +1,89 @@
+.fill-height-or-more {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.fill-height-or-more > div {
+  /* these are the flex items */
+  flex: 1;
+}
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+.flex-container{
+	display:flex;
+	flex-flow: row wrap;
+}
+.main-content{
+	flex:2;
+}
+.thumbnail-content{
+
+	width:50%;
+	padding:5px;
+}
+.thumbnail-wrapper{
+	display: inline-flex;
+	flex-flow: row wrap;
+}
+
+.projectInfo,.worklogInfo,.userInfo {
+	list-style: none;
+	padding-left: 0;
+
+}
+.infoContainer {
+	width:80%;
+	text-align:center;
+	margin: 10px auto;
+}
+.clockpicker {
+	width:auto;
+	margin:auto;
+}
+.clockpicker > .form-control,.clockpicker > .input-group-addon {
+	width:auto;
+}
+
+#home-navbar > div > div > ul > li > a:hover, .navbar-header > .navbar-brand, .navbar-header > .navbar-brand:hover {
+	color:gray;
+}
+
+.navbar-header > .navbar-brand:hover {
+	color:black;
+}
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+.row {
+    margin-top: 40px;
+    padding: 0 10px;
+}
+.clickable {
+    cursor: pointer;
+}
+#youtube-nav>li>a, .nav>.dashboard-btn>a {
+	padding: 0px 0px;
+}
+#youtube-nav>li>button,#youtube-nav>li>a>button,.dashboard-btn>button,.dashboard-btn>a>button {
+	margin: 5px 5px;
+}
+.youtube-id{
+	word-wrap: break-word;
+}
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+.equal, .equal > div[class*='col-'] {  
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+.row {
+	margin-top:5px;
+}

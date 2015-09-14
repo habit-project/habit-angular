@@ -1,6 +1,8 @@
 // public/js/controllers/ScheduleCtrl.js
 var ScheduleCtrl =angular.module('ScheduleCtrl', []);
 ScheduleCtrl.controller('ScheduleController', ['$scope','$http','Auth',function($scope,$http, Auth) {
+	$scope.loggedIn = Auth.loggedIn;
+	$scope.user = Auth.user;
 	/*$scope.loggedIn = false;
 	$scope.user={};
 	$scope.checkUser = function(){

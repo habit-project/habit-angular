@@ -5,7 +5,7 @@ UserMenu.directive('ngMenu', function() {
     	templateUrl: 'views/menu.html',
 		controller: ['$scope', 'Auth', function($scope, Auth) {
 			$scope.loggedIn = false;
-			$scope.user={};
+			$scope.user = {};
 			$scope.checkUser = function(){
 				Auth.checkUser(function(data){
 					console.log("checkUser: " + data);

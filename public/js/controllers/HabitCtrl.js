@@ -1,6 +1,8 @@
 // public/js/controllers/HabitCtrl.js
 var HabitCtrl =angular.module('HabitCtrl', []);
 HabitCtrl.controller('HabitController', ['$scope','$http','Auth',function($scope,$http, Auth) {
+	$scope.loggedIn = Auth.loggedIn;
+	$scope.user = Auth.user;
 	/*$scope.loggedIn = false;
 	$scope.user={};
 	$scope.checkUser = function(){

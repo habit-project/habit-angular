@@ -1,10 +1,8 @@
 // public/js/controllers/MainCtrl.js
 var MainCtrl =angular.module('MainCtrl', []);
 MainCtrl.controller('MainController', ['$scope','$http','Auth',function($scope,$http, Auth) {
-	$scope.loggedIn = Auth.loggedIn;
-	$scope.user = Auth.user;
-	/*$scope.loggedIn = false;
-	$scope.user={};
+	$scope.loggedIn = false;
+	$scope.user = {};
 	$scope.checkUser = function(){
 		Auth.checkUser(function(data){
 			console.log("checkUser: " + data);
@@ -13,6 +11,12 @@ MainCtrl.controller('MainController', ['$scope','$http','Auth',function($scope,$
 				$scope.user = data;
 			}
 		});
-	}*/
+	}
+	$scope.logout = function(){
+		$scope.loggedIn = false;
+		$scope.user = {};
+		Auth.logout();
+	}
+	$scope.checkUser();
 	
 }]);
